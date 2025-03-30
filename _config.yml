@@ -2,7 +2,6 @@ lsi: false
 safe: true
 source: .
 destination: _site
-theme: BDHU/minimalist
 incremental: false
 highlighter: rouge
 gist:
@@ -11,7 +10,9 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 
+remote_theme: BDHU/minimalist
 title: A.V. Roots
 description: Alumni Vereniging Roots, de plek waar je jouw oud A-Eskwadraat kamergangers weer ontmoet!
 color-scheme: light
 logo: /assets/img/logo_vierkant.png
+favicon: true
