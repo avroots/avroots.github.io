@@ -16,3 +16,6 @@ description: Alumni Vereniging Roots, de plek waar je jouw oud A-Eskwadraat kame
 color-scheme: light
 logo: /assets/img/logo_vierkant.png
 favicon: true
+
+collections:
+  - activiteiten
