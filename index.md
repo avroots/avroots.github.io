@@ -1,6 +1,6 @@
 ---
-layout: home
-title: Alumni Vereniging Roots
+title: Home
+layout: default
 ---
 
 # Welkom bij A.V. Roots
@@ -9,16 +9,15 @@ Welkom op de officiële website van Alumni Vereniging Roots! Wij zijn een actiev
 
 ## Aankomende Activiteit
 
-{% assign upcoming_events = site.categories.activiteiten | sort: 'date' | where_exp: "event", "event.date >= site.time" %}
+{% assign upcoming_events = site.activiteiten | sort: 'eventdate' | where_exp: "event", "event.eventdate >= site.time" %}
 {% if upcoming_events.size > 0 %}
 {% assign next_event = upcoming_events.first %}
-
 <div class="featured-event">
-  <h3><a href="{{ next_event.url }}">{{ next_event.title }}</a></h3>
-  <p class="event-date">{{ next_event.date | date: "%d-%m-%Y" }} om {{ next_event.time }}</p>
-  <p class="event-location">Locatie: {{ next_event.location }}</p>
-  <p class="event-cost">Kosten: {{ next_event.cost }}</p>
-  <a href="{{ next_event.url }}" class="button">Meer informatie</a>
+<h3><a href="{{ next_event.url }}">{{ next_event.title }}</a></h3>
+<p class="event-date">{{ next_event.eventdate | date: "%d-%m-%Y, om %H:%M" }}</p>
+<p class="event-location">Locatie: {{ next_event.location }}</p>
+<p class="event-cost">Kosten: {{ next_event.cost }}</p>
+<a href="{{ next_event.url }}" class="button">Meer informatie</a>
 </div>
 {% else %}
 <p>Er zijn momenteel geen aankomende activiteiten gepland. Kom binnenkort terug voor updates!</p>

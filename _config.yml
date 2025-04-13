@@ -1,5 +1,4 @@
 lsi: false
-safe: true
 source: .
 destination: _site
 incremental: false
@@ -9,13 +8,21 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+
+baseurl: ""
+url: ""
 
 remote_theme: BDHU/minimalist
 title: A.V. Roots
-description: Alumni Vereniging Roots, de plek waar je jouw oud A-Eskwadraat kamergangers weer ontmoet!
+email: bestuur@avroots.nl
+description: A.V. Roots, voor oud A-Eskwadraaters!
 color-scheme: light
 logo: /assets/img/logo_vierkant.png
 favicon: true
 
 collections:
-  - activiteiten
+  activiteiten:
+    output: true

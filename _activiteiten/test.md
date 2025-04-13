@@ -1,10 +1,11 @@
-```markdown
 ---
-title: "Test Activiteit: Samenkomst Alumni"
-date: 2025-05-03
-time: 10:00
+layout: default
+
+title: "Test Activiteit"
+eventdate: 2025-04-01 10:00:00
 location: "Vagant, de uithof"
-cost: 10 euro
+cost: "10 euro"
+
 ---
 
 ## Doe mee met onze Test Activiteit!
@@ -29,4 +30,3 @@ We kijken ernaar uit om je te zien op deze bijzondere dag!
 
 Met vriendelijke groet,  
 Het bestuur van de Alumni Vereniging
-```
