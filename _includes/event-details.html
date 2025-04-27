@@ -1,0 +1,134 @@
+<!-- put all properties of include.activiteit in a variable called event -->
+{% assign event = include.activiteit | default: include %}
+{% assign showlink = include.showlink | default: false %}
+{% assign showyear = include.showyear | default: false %}
+
+<!-- Calculate if the event is upcoming (today or in the future) -->
+{% assign today_date = 'now' | date: '%Y-%m-%d' %}
+{% assign event_date = event.eventdate | date: '%Y-%m-%d' %}
+{% assign is_upcoming = false %}
+{% if event_date >= today_date %}
+  {% assign is_upcoming = true %}
+{% endif %}
+
+<!-- get the weekday ('Zaterdag', 'Dinsdag' etc) -->
+{% assign day_number = event.eventdate | date: "%w" %}
+{% assign weekday = site.data.weekdays[day_number] %}
+
+<!-- get the month number and lookup Dutch month name -->
+{% assign month_number = event.eventdate | date: "%-m" | minus: 1 %}
+{% assign dutch_month = site.data.months[month_number] %}
+
+<!-- get the URL of the poster image -->
+<!-- This will always be the same as the filename of the page, with a .jpg or .png extension -->
+{% assign image_name = event.path | split: '/' | last | split: '.' | first %}
+{% assign image_base = "/activiteiten/" | append: image_name %}
+{% assign image_path = image_base | append: ".png" %}
+
+
+<!-- define the styling of the component in CSS -->
+<style>
+  .event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    padding: 1.5rem;
+    background: #e9e9e9;
+    color: black;
+  }
+
+  .event-container.upcomming {
+    background: #e17f16;
+  }
+  
+  .event-container.upcoming {
+    background: #e17f16;
+  }
+    
+  .event-details {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .event-image img {
+    max-width: 100%;
+    height: 10rem;
+    object-fit: contain;
+  }
+  
+  .event-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    border: none;
+  }
+  
+  .event-details td {
+    padding: 0;
+    vertical-align: top;
+    border: none;
+  }
+  
+  .event-details td:first-child {
+    font-weight: bold;
+    width: 6rem;
+  }
+  
+  @media (max-width: 600px) {
+    .event-container {
+      flex-direction: column;
+    }
+    
+    .event-image {
+      max-width: 100%;
+    }
+  }
+
+  .event-container.showlink {
+    cursor: pointer;
+    transition: transform 0.15s ease-in-out;
+  }
+  .event-container.showlink:hover {
+    transform: scale(1.03) rotate(0.5deg);
+  }
+</style>
+
+<!-- create the event details component in HTML -->
+<div class="event-container {% if is_upcoming %}upcoming{% endif %} {% if showlink %}showlink{% endif %}" {% if showlink %}onclick="window.location.href='{{ event.url }}'"{% endif %}>
+  <div class="event-details">
+    <table>
+      <tr>
+        <td colspan="2">
+            <h3 style="margin: 0 0 .2rem 0; color:black;">{{ event.title }}</h3>
+        </td>
+      </tr>
+      <tr>
+        <td>waar</td>
+        <td>{{ event.location }}</td>
+      </tr>
+      <tr>
+        <td>prijs</td>
+        <td>{{ event.cost }}</td>
+      </tr>
+      <tr>
+        <td>wanneer</td>
+        <td>{{ weekday }} {{ event.eventdate | date: "%-d" }} {{ dutch_month }} {{% if showyear %}}{{ event.eventdate | date: "%Y" }}{{% endif %}} van {{ event.eventdate | date: "%H:%M" }} tot {{ event.eventend | date: "%H:%M" }}</td>
+        </tr>
+    </table>
+  </div>
+  <div class="event-image">
+    <img src="{{ image_path }}" alt="plaatje activiteit poster" onerror="
+      if(this.src.endsWith('.png')){
+        this.src = this.src.replace('.png', '.jpg');
+      }
+      else if (this.src.endsWith('.jpg')){
+        this.src = this.src.replace('.jpg', '.jpeg');
+      }
+      else {
+        console.error('Failed to load image: ' + this.src);
+        this.style.display = 'none';
+      }">
+  </div>
+</div>

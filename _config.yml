@@ -1,4 +1,5 @@
 lsi: false
+safe: true
 source: .
 destination: _site
 incremental: false
@@ -13,15 +14,20 @@ plugins:
   - jekyll-feed
 
 baseurl: ""
-url: ""
+url: https://avroots.nl
 
 remote_theme: BDHU/minimalist
 title: A.V. Roots
 email: bestuur@avroots.nl
-description: A.V. Roots, voor oud A-Eskwadraaters!
+description: Oud A–Eskwadraaters kamer meubilair
 color-scheme: light
-logo: /assets/img/logo_vierkant.png
+logo: /assets/logo_vierkant.png
 favicon: true
+
+# Navigation links
+header_pages:
+  - index.md
+  - activiteiten.md
 
 collections:
   activiteiten:
