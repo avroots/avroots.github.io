@@ -1,7 +1,6 @@
 <!-- put all properties of include.activiteit in a variable called event -->
 {% assign event = include.activiteit | default: include %}
 {% assign showlink = include.showlink | default: false %}
-{% assign showyear = include.showyear | default: false %}
 
 <!-- Calculate if the event is upcoming (today or in the future) -->
 {% assign today_date = 'now' | date: '%Y-%m-%d' %}
@@ -11,9 +10,20 @@
   {% assign is_upcoming = true %}
 {% endif %}
 
+{% if is_upcoming %}
+  {% assign showyear = false %}
+{% else %}
+  {% assign showyear = include.showyear | default: true %}
+{% endif %}
+
 <!-- get the weekday ('Zaterdag', 'Dinsdag' etc) -->
-{% assign day_number = event.eventdate | date: "%w" %}
-{% assign weekday = site.data.weekdays[day_number] %}
+{% assign day_number_str = event.eventdate | date: "%w" %}
+{% if day_number_str == "" %}
+  {% assign weekday = "" %}
+{% else %}
+  {% assign day_number_int = day_number_str | plus: 0 %}
+  {% assign weekday = site.data.weekdays[day_number_int] %}
+{% endif %}
 
 <!-- get the month number and lookup Dutch month name -->
 {% assign month_number = event.eventdate | date: "%-m" | minus: 1 %}
@@ -88,10 +98,38 @@
 
   .event-container.showlink {
     cursor: pointer;
-    transition: transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
   }
-  .event-container.showlink:hover {
+  
+  .event-container.showlink:hover:not(:has(.signup-button:hover)) {
     transform: scale(1.03) rotate(0.5deg);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  @keyframes rainbow-border-effect {
+    0%, 100% { background-color: #FFFFFF; transform: scale(1.0) rotate(0deg); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6); }
+    12.5%   { background-color: #FFBDBD; transform: scale(1.2) rotate(2deg); box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.6); }
+    25%     { background-color: #FFDFBF;  transform: scale(1) rotate(8deg); }
+    37.5%   { background-color: #FFFFBF; }
+    50%     { background-color: #BFFFBF; transform: scale(0.95) rotate(0deg); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);}
+    62.5%   { background-color: #BFBFFF; }
+    75%     { background-color: #D1BFDF; transform: scale(1) rotate(-8deg); }
+    87.5%   { background-color: #E2BFFF; }
+  }
+
+  .signup-button {
+    /* Moved from inline styles */
+    background-color: white;
+    color: black;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block; /* Ensures transform works correctly */
+    transition: box-shadow 0.15s ease-in-out, padding 0.15s ease-in-out; /* Added padding to transition */
+  }
+
+  .signup-button:hover {
+    animation: rainbow-border-effect 2.5s linear infinite;
   }
 </style>
 
@@ -105,6 +143,13 @@
         </td>
       </tr>
       <tr>
+        <td>wanneer</td>
+        <td>
+          {{ weekday }} {{ event.eventdate | date: "%-d" }} {{ dutch_month }} {% if showyear %}{{ event.eventdate | date: "%Y" }}{% endif %}
+          <small>{{ event.eventdate | date: "%H:%M" }} tot {{ event.eventend | date: "%H:%M" }}</small>
+        </td>
+      </tr>
+      <tr>
         <td>waar</td>
         <td>{{ event.location }}</td>
       </tr>
@@ -112,14 +157,20 @@
         <td>prijs</td>
         <td>{{ event.cost }}</td>
       </tr>
+      {% if event.signup and event.signup != "" and is_upcoming %}
       <tr>
-        <td>wanneer</td>
-        <td>{{ weekday }} {{ event.eventdate | date: "%-d" }} {{ dutch_month }} {{% if showyear %}}{{ event.eventdate | date: "%Y" }}{{% endif %}} van {{ event.eventdate | date: "%H:%M" }} tot {{ event.eventend | date: "%H:%M" }}</td>
-        </tr>
+        <td></td>
+        <td style="padding-top: 0.5em;">
+          <a href="{{ event.signup }}" target="_blank" class="signup-button">
+            <b>inschrijven</b>
+          </a>
+        </td>
+      </tr>
+      {% endif %}
     </table>
   </div>
   <div class="event-image">
-    <img src="{{ image_path }}" alt="plaatje activiteit poster" onerror="
+    <img src="{{ image_path }}" alt="poster" onerror="
       if(this.src.endsWith('.png')){
         this.src = this.src.replace('.png', '.jpg');
       }

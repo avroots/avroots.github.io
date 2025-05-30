@@ -22,7 +22,8 @@ Er zijn momenteel geen aankomende activiteiten gepland.
 {% if past_activities.size > 0 %}
   {% assign activities_by_year = past_activities | group_by_exp: "activity", "activity.eventdate | date: '%Y'" %}
   {% for year_group in activities_by_year %}
-<h4>{{ year_group.name }}</h4>
+  <br/><br/>
+<h2>{{ year_group.name }}</h2>
     {% for activity in year_group.items %}
 
 {% include event-details.html activiteit=activity showlink=true %}

@@ -7,6 +7,7 @@ layout: default
 
 Wij zijn Alumni Vereniging Roots, de vereniging voor alumni van Studievereniging A–Eskwadraad, van de Universiteit Utrecht. Wil je weer is bijpraten met je oud-studiegenoten? Kom naar een van onze laagdrempelige activiteiten!
 
+<br/><br/>
 
 ## Volgende Activiteit
 {% assign upcoming_events = site.activiteiten | sort: 'eventdate' | where_exp: "event", "event.eventdate >= site.time" %}
@@ -18,7 +19,12 @@ Er zijn momenteel geen aankomende activiteiten gepland.<br/>
 Kom binnenkort terug voor updates!
 {% endif %}
 
-<br/>
+<br/><br/>
+
+{% include mailchimp_form.html %}
+
+<br/><br/>
+
 ## Word Roots lid
 [Ook lid worden? vul dit formulier in!](https://forms.gle/4yzGaSdxB1vhu1eK9)
 
