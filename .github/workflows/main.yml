@@ -13,26 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.0'
-          bundler-cache: true # Speeds up build times by caching gems
-
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
       - name: Build with Jekyll
-        run: bundle exec jekyll build --config _config.yml --destination _site
-        env:
-          JEKYLL_ENV: production
+        uses: actions/jekyll-build-pages@v1
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: '_site'
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
