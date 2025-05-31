@@ -34,3 +34,7 @@ Zonder leden geen geen vereniging, en zonder vereniging geen activiteiten! Je ka
 - Als van te voren aangegeven, een **gratis drankje** bij een activiteit
 - **Voorrang** op activiteiten waar weinig plek is
 - De wetenschap dat Roots de website, bankrekening en andere dingen kan betalen dankzij **jou genereuze gift**.
+
+
+<br/><br/>
+<p style="text-align:right;font-size:smaller;">Site gegenereerd op: {{ site.time | date: "%d-%m-%Y %H:%M" }}</p>
