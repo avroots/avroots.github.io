@@ -1,5 +1,5 @@
 ---
-title: Home
+title: home
 layout: default
 ---
 
@@ -18,6 +18,10 @@ Wij zijn Alumni Vereniging Roots, de vereniging voor alumni van Studievereniging
 Er zijn momenteel geen aankomende activiteiten gepland.<br/>
 Kom binnenkort terug voor updates!
 {% endif %}
+
+<p style="text-align:right;">
+<a href="/activiteiten/">.. of bekijk alle activiteiten</a>
+</p>
 
 <br/><br/>
 

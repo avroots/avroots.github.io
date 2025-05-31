@@ -1,20 +1,37 @@
 <style>
   .navbar {
     display: flex;
-    justify-content: flex-end;
-    padding: 10px 0;
+    justify-content: flex-start;
+    gap: 1rem;
   }
+
   .navbar a {
-    margin-left: 15px;
     text-decoration: none;
+    background-color: white;
+    color: black; 
+    border: 1px solid gray;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  }
+  .navbar a:hover {
+    background-color: #f0f0f0;
+    color: black;
+    border-color: #555; 
+  }
+  .navbar a.active, .navbar a:active {
+    background-color: #e0e0e0; /* Or any color you prefer for the active state */
+    border-color: #333;
   }
 </style>
 
-<div class="navbar">
-  {% for path in site.header_pages %}
+<div class="wrapper">
+  <section class="navbar">
+    {% for path in site.header_pages %}
     {% assign my_page = site.pages | where: "path", path | first %}
     {% if my_page.title %}
-      <a href="{{ my_page.url | relative_url }}">{{ my_page.title }}</a>
+    <a href="{{ my_page.url | relative_url }}" {% if page.url == my_page.url %}class="active"{% endif %}>{{ my_page.title }}</a>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
+  </section>
 </div>

@@ -1,6 +1,6 @@
 <!-- put all properties of include.activiteit in a variable called event -->
 {% assign event = include.activiteit | default: include %}
-{% assign showlink = include.showlink | default: false %}
+{% assign aslink = include.aslink | default: false %}
 
 <!-- Calculate if the event is upcoming (today or in the future) -->
 {% assign today_date = 'now' | date: '%Y-%m-%d' %}
@@ -8,12 +8,6 @@
 {% assign is_upcoming = false %}
 {% if event_date >= today_date %}
   {% assign is_upcoming = true %}
-{% endif %}
-
-{% if is_upcoming %}
-  {% assign showyear = false %}
-{% else %}
-  {% assign showyear = include.showyear | default: true %}
 {% endif %}
 
 <!-- get the weekday ('Zaterdag', 'Dinsdag' etc) -->
@@ -96,12 +90,12 @@
     }
   }
 
-  .event-container.showlink {
+  .event-container.aslink {
     cursor: pointer;
     transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
   }
   
-  .event-container.showlink:hover:not(:has(.signup-button:hover)) {
+  .event-container.aslink:hover:not(:has(.signup-button:hover)) {
     transform: scale(1.03) rotate(0.5deg);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
   }
@@ -134,7 +128,7 @@
 </style>
 
 <!-- create the event details component in HTML -->
-<div class="event-container {% if is_upcoming %}upcoming{% endif %} {% if showlink %}showlink{% endif %}" {% if showlink %}onclick="window.location.href='{{ event.url }}'"{% endif %}>
+<div class="event-container {% if is_upcoming %}upcoming{% endif %} {% if aslink %}aslink{% endif %}" {% if aslink %}onclick="window.location.href='{{ event.url }}'"{% endif %}>
   <div class="event-details">
     <table>
       <tr>
@@ -145,7 +139,7 @@
       <tr>
         <td>wanneer</td>
         <td>
-          {{ weekday }} {{ event.eventdate | date: "%-d" }} {{ dutch_month }} {% if showyear %}{{ event.eventdate | date: "%Y" }}{% endif %}
+          {{ weekday }} {{ event.eventdate | date: "%-d" }} {{ dutch_month }} {{ event.eventdate | date: "%Y" }}
           <small>{{ event.eventdate | date: "%H:%M" }} tot {{ event.eventend | date: "%H:%M" }}</small>
         </td>
       </tr>

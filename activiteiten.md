@@ -1,5 +1,5 @@
 ---
-title: Activiteiten
+title: activiteiten
 layout: default
 ---
 

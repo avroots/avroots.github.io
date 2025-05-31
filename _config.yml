@@ -29,6 +29,8 @@ favicon: true
 header_pages:
   - index.md
   - activiteiten.md
+  - vereniging.md
+  - contact.md
 
 collections:
   activiteiten:
