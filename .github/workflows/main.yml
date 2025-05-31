@@ -1,4 +1,4 @@
-name: Build and Deploy avroots Jekyll Site Daily
+name: nightly-build
 
 on:
   schedule:
@@ -16,7 +16,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.8'
+          ruby-version: '3.0'
           bundler-cache: true # Speeds up build times by caching gems
 
       - name: Setup Pages
