@@ -37,4 +37,4 @@ Zonder leden geen geen vereniging, en zonder vereniging geen activiteiten! Je ka
 
 
 <br/><br/>
-<p style="text-align:right;font-size:smaller;">Site gegenereerd op: {{ site.time | date: "%d-%m-%Y %H:%M" }}</p>
+<p style="text-align:right;font-size:smaller;">Site gegenereerd op: {{ site.time | date: "%d-%m-%Y %H:%M %Z" }}</p>

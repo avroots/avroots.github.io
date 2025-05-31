@@ -15,6 +15,7 @@ plugins:
 
 baseurl: ""
 url: https://avroots.nl
+timezone: Europe/Amsterdam
 
 remote_theme: BDHU/minimalist
 title: A.V. Roots
