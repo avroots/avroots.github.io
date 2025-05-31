@@ -13,7 +13,7 @@ Wij zijn Alumni Vereniging Roots, de vereniging voor alumni van Studievereniging
 {% assign upcoming_events = site.activiteiten | sort: 'eventdate' | where_exp: "event", "event.eventdate >= site.time" %}
 {% if upcoming_events.size > 0 %}
 {% assign next_event = upcoming_events.first %}
-{% include event-details.html activiteit=next_event showlink=true %}
+{% include event-details.html activiteit=next_event aslink=true %}
 {% else %}
 Er zijn momenteel geen aankomende activiteiten gepland.<br/>
 Kom binnenkort terug voor updates!

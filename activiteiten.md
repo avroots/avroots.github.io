@@ -8,7 +8,7 @@ layout: default
 {% if upcoming_activities.size > 0 %}
 {% for activity in upcoming_activities %}
 
-{% include event-details.html activiteit=activity showlink=true %}
+{% include event-details.html activiteit=activity aslink=true %}
 
 {% endfor %}
 {% else %}
@@ -26,7 +26,7 @@ Er zijn momenteel geen aankomende activiteiten gepland.
 <h2>{{ year_group.name }}</h2>
     {% for activity in year_group.items %}
 
-{% include event-details.html activiteit=activity showlink=true %}
+{% include event-details.html activiteit=activity aslink=true %}
 
     {% endfor %}
   {% endfor %}
