@@ -53,7 +53,6 @@
     
   .event-details {
     flex: 1;
-    min-width: 300px;
   }
   
   .event-image img {
@@ -87,6 +86,14 @@
     
     .event-image {
       max-width: 100%;
+      align-self: center;
+    }
+  }
+
+  @media (max-width: 300px) {
+    /* hide the first column of the event-details */
+    .event-details td:first-child:not([colspan="2"]) {
+      display: none;
     }
   }
 

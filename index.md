@@ -3,17 +3,32 @@ title: home
 layout: default
 ---
 
-# Alumni Vereniging Roots
+# Alumnivereniging Roots
 
-Wij zijn Alumni Vereniging Roots, de vereniging voor alumni van Studievereniging A–Eskwadraad, van de Universiteit Utrecht. Wil je weer is bijpraten met je oud-studiegenoten? Kom naar een van onze laagdrempelige activiteiten!
+Alumnivereniging Roots, de vereniging voor alumni van Studievereniging A–Eskwadraad, van de Universiteit Utrecht. Wil je weer is bijpraten met je oud-studiegenoten? Kom naar een van onze laagdrempelige activiteiten!
 
 <br/><br/>
 
 ## Volgende Activiteit
+<!-- find out if there is a next_event and show it -->
 {% assign upcoming_events = site.activiteiten | sort: 'eventdate' | where_exp: "event", "event.eventdate >= site.time" %}
 {% if upcoming_events.size > 0 %}
 {% assign next_event = upcoming_events.first %}
 {% include event-details.html activiteit=next_event aslink=true %}
+
+<!-- if the next event is tomorrow or today, also show the event afther that -->
+{% if upcoming_events.size > 1 %}
+{% assign next_event_date_string = next_event.eventdate | date: "%Y-%m-%d" %}
+{% assign tomorrow_timestamp = site.time | date: "%s" | plus: 86400 %}
+{% assign tomorrow_date_string = tomorrow_timestamp | date: "%Y-%m-%d" %}
+{% if next_event_date_string <= tomorrow_date_string %}
+{% assign next_next_event = upcoming_events[1] %}
+{% include event-details.html activiteit=next_next_event aslink=true %}
+{% endif %}
+
+{% endif %}
+
+<!-- if there are no upcomming events, show a short msg -->
 {% else %}
 Er zijn momenteel geen aankomende activiteiten gepland.<br/>
 Kom binnenkort terug voor updates!
