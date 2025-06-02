@@ -1,6 +1,7 @@
 ---
 title: home
 layout: default
+permalink: / # This ensures it remains the site's root page, e.g., https://avroots.nl/
 ---
 
 # Alumnivereniging Roots
@@ -35,7 +36,7 @@ Kom binnenkort terug voor updates!
 {% endif %}
 
 <p style="text-align:right;">
-<a href="/activiteiten/">.. of bekijk alle activiteiten</a>
+<a href="/activiteiten.html">.. of bekijk alle activiteiten</a>
 </p>
 
 <br/><br/>

@@ -1,6 +1,7 @@
 ---
 title: activiteiten
 layout: default
+permalink: /activiteiten.html # Or /activiteiten/ if you prefer directory-style URLs
 ---
 
 # Activiteiten

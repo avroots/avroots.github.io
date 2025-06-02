@@ -1,6 +1,7 @@
 ---
 title: vereniging
 layout: default
+permalink: /vereniging.html
 ---
 
 **op deze pagina**

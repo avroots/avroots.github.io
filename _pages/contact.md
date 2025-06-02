@@ -1,6 +1,7 @@
 ---
 title: contact
 layout: default
+permalink: /contact.html
 ---
 
 Wij zijn te bereiken via e-mail: [bestuur@avroots.nl](mailto:bestuur@avroots.nl)<br/>

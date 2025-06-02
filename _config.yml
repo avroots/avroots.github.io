@@ -27,11 +27,13 @@ favicon: true
 
 # Navigation links
 header_pages:
-  - index.md
-  - activiteiten.md
-  - vereniging.md
-  - contact.md
+  - _pages/index.md
+  - _pages/activiteiten.md
+  - _pages/vereniging.md
+  - _pages/contact.md
 
 collections:
   activiteiten:
+    output: true
+  pages:
     output: true
