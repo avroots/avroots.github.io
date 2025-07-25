@@ -19,6 +19,5 @@ Een schaakbord van 30x30 meter, 2 spelers en een schaakklok aan de rand van het 
 Op 23 augustus, van 10:30 tot 14:30 is het eerste echte grootschaak toernooi! Ben jij een Groots-schaker? Schrijf je dan in via de onderstaande link!
 (link komt nog)
 
-
 #### Aftermovie grootschaak 2024
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fJ05JlkCUdo?si=EDuDARbaH_VCmxiT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="610" height="345" src="https://www.youtube.com/embed/fJ05JlkCUdo?si=EDuDARbaH_VCmxiT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
