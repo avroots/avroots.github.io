@@ -18,8 +18,12 @@ Een schaakbord van 30x30 meter, 2 spelers en een schaakklok aan de rand van het 
 
 Op 21 augustus kan je van 16u tot 19u langskomen om een potje te spelen, geen inschrijving nodig! We kunnen niet garanderen dat er tijd is voor iedereen om een potje te spelen.
 
-Wil je mee doen aan het toernooi op 23 augustus? Kijk dan hier:
+#### Aftermovie grootschaak 2024
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fJ05JlkCUdo?si=EDuDARbaH_VCmxiT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+#### toernooi 23 augustus
+Wil je competatief grootschaken en een Groots-schaker worden? Schrijf je dan in voor het toernooi op 23 augustus!
 
 {% assign toernooi_event = site.activiteiten | where: "title", "Grootschaak (toernooi)" | first %}
 {% include event-details.html activiteit=toernooi_event aslink=true %}
-
