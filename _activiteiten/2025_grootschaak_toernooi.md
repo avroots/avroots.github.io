@@ -1,9 +1,9 @@
 ---
 layout: default
 
-title: "Grootschaak (vrije inloop)"
-eventdate: 2025-08-21 16:00:00
-eventend: 2025-08-21 19:00:00
+title: "Grootschaak (toernooi)"
+eventdate: 2025-08-23 10:30:00
+eventend: 2025-08-23 14:30:00
 location: "Jaarbeursplein (bij de grote trap naar Utrecht Centraal)"
 cost: "gratis"
 signup:
@@ -16,10 +16,5 @@ Vind je schaken leuk? Of heb je een goede hardloopconditie? BEIDE!? dan ban jij 
 
 Een schaakbord van 30x30 meter, 2 spelers en een schaakklok aan de rand van het bord met 1 minuut op de klok. Kan jij je hoofd koel houden en de juiste zetten doen? Of ga je je tegenstander afmatten met je hardloopconditie?
 
-Op 21 augustus kan je van 16u tot 19u langskomen om een potje te spelen, geen inschrijving nodig! We kunnen niet garanderen dat er tijd is voor iedereen om een potje te spelen.
-
-Wil je mee doen aan het toernooi op 23 augustus? Kijk dan hier:
-
-{% assign toernooi_event = site.activiteiten | where: "title", "Grootschaak (toernooi)" | first %}
-{% include event-details.html activiteit=toernooi_event aslink=true %}
-
+Op 23 augustus, van 10:30 tot 14:30 is het eerste echte grootschaak toernooi! Ben jij een Groots-schaker? Schrijf je dan in via de onderstaande link!
+(link komt nog)
