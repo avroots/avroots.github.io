@@ -12,7 +12,9 @@ signup: "https://forms.gle/7xo2vQvT6ie7UUhBA"
 ## Escaperoom
 {% include event-details.html activiteit=page %}
 
-Nederland is overrompeld door een atoomoorlog, jij en 2 (of 3) vrienden zijn ingestapt bij een trukker die naar de veilige zone rijdt. Na enige tijd onderweg lijkt het erop dat jullie chauffeur overleden is aan de straling, en jullie zitten vast in de laadruimte van de kleine vrachtwagen! Lukt het jullie om te ontsnappen voordat ook jullie aan de straling bezwijken?
+Nederland is overrompeld door een atoomoorlog, jij en 2 (of 3) vrienden zijn ingestapt bij een trucker die naar de veilige zone rijdt. Na enige tijd onderweg lijkt het erop dat jullie chauffeur overleden is aan de straling, en jullie zitten vast in de laadruimte van de kleine vrachtwagen! Lukt het jullie om te ontsnappen voordat ook jullie aan de straling bezwijken?
 
-Meld je aan met een groepje van 3 (of 4) personen, je krijgt van ons een tijdslot toegeween ergens tussen 13u en 19u. Per groepjes zijn de kosten 30 euro. Achteraf is er gelegenheid om nog wat na te praten onder het genot van een koffie / thee / pilsje / koekje.
+Meld je aan met een groepje van 3 (of 4) personen, je krijgt van ons een tijdslot toegewezen ergens tussen 13u en 19u. Per groepje zijn de kosten 30 euro. Achteraf is er gelegenheid om nog wat na te praten onder het genot van een koffie / thee / pilsje / koekje.
+
+Let op! Als er meer aanmeldingen zijn dan er plekken zijn gaan leden voor. Ben je nog geen lid, en wil je A.V. Roots steunen met 10 euro per jaar door lid te worden? [Vul het lid worden formulier in!](https://forms.gle/4yzGaSdxB1vhu1eK9)
 
