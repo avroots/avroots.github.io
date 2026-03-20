@@ -14,10 +14,10 @@ signup: "https://sprintschaak.nl/"
 
 Het Jaarbeursplein als schaakbord van 20*20 meter? Jazeker! Kom maar kijken deze zomer.
 
-Leuk dat je interesse hebt in sprintschaken op het Jaarbeursplein. Met dit formulier kun je je kosteloos aanmelden voor het toernooi op zaterdag 23 augustus 2025, van 10:30 tot 14:30. We delen je graag in bij iemand met eenzelfde niveau/conditie.
+Leuk dat je interesse hebt in sprintschaken op het Jaarbeursplein. Met dit formulier kun je je kosteloos aanmelden voor het toernooi op zaterdag 6 juni 2026 (de tijd staat nog niet vast). We delen je graag in bij iemand met eenzelfde niveau/conditie.
 
 We kunnen geen deelname garanderen vanwege de beperkte tijd en speelplekken, maar [vul het formulier in](https://forms.gle/8uLxRSR4ZGrWgkGd9) en dan krijg je spoedig te horen of het gelukt is. We delen je graag in op basis van je antwoorden en sturen je alle details via het mailadres dat je opgeeft.
 
 
 #### Aftermovie sprintschaak 2025
-<iframe width="610" height="345" src="https://www.youtube.com/watch?v=P3fU-9oQGZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="610" height="345" src="https://www.youtube.com/embed/P3fU-9oQGZM?si=JY7s5xV2mhIokenc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
