@@ -2,8 +2,8 @@
 layout: default
 
 title: "NK Sprintschaak toernooi"
-eventdate: 2026-06-06
-eventend: 2026-06-06
+eventdate: 2026-06-06 00:00:00
+eventend: 2026-06-06 23:59:00
 location: "Jaarbeursplein (bij de grote trap naar Utrecht Centraal)"
 cost: "gratis"
 signup: "https://sprintschaak.nl/"
