@@ -9,14 +9,16 @@ cost: "gratis"
 signup: "https://utrechtaan.nl/nk-sprintschaak-zaterdag/"
 ---
 
-## NK Sprintschaak toernooi
+Deze activiteit is al geweest. <a href="https://avroots.nl/activiteiten/2026_nk_sprintschaak_toernooi.html">Klik hier voor het NK Sprintschaak 2026</a>
+
+## NK Sprintschaak toernooi 2025
 {% include event-details.html activiteit=page %}
 
 Het Jaarbeursplein als schaakbord van 20*20 meter? Jazeker! Kom maar kijken deze zomer.
 
 Leuk dat je interesse hebt in sprintschaken op het Jaarbeursplein. Met dit formulier kun je je kosteloos aanmelden voor het toernooi op zaterdag 23 augustus 2025, van 10:30 tot 14:30. We delen je graag in bij iemand met eenzelfde niveau/conditie.
 
-We kunnen geen deelname garanderen vanwege de beperkte tijd en speelplekken, maar [vul het formulier in](https://utrechtaan.nl/nk-sprintschaak-zaterdag/) en dan krijg je spoedig te horen of het gelukt is. We delen je graag in op basis van je antwoorden en sturen je alle details via het mailadres dat je opgeeft.
+We kunnen geen deelname garanderen vanwege de beperkte tijd en speelplekken, maar [vul het formulier in](http://sprintschaak.nl) en dan krijg je spoedig te horen of het gelukt is. We delen je graag in op basis van je antwoorden en sturen je alle details via het mailadres dat je opgeeft.
 
 
 #### Aftermovie sprintschaak 2024
