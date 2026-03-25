@@ -43,7 +43,7 @@ Het tekstje van Willem is reeds te ontvangen
 **Kyle – Algemeen bestuurslid**<br/>
 *sinds 2025*
 
-Het tekstje van Kye is reeds te ontvangen
+Het tekstje van Kyle is reeds te ontvangen
 
 ### Oud bestuur
 *   Michael 2022-2024

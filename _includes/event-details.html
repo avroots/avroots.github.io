@@ -1,6 +1,7 @@
 <!-- put all properties of include.activiteit in a variable called event -->
 {% assign event = include.activiteit | default: include %}
 {% assign aslink = include.aslink | default: false %}
+{% assign showonlymonth = event.showonlymonth | default: false %}
 
 <!-- Calculate if the event is upcoming (today or in the future) -->
 {% assign today_date = 'now' | date: '%Y-%m-%d' %}
@@ -146,8 +147,12 @@
       <tr>
         <td>wanneer</td>
         <td>
+          {% if showonlymonth %}
+          {{ dutch_month }}
+          {% else %}
           {{ weekday }} {{ event.eventdate | date: "%-d" }} {{ dutch_month }} {{ event.eventdate | date: "%Y" }}
           <small>{{ event.eventdate | date: "%H:%M" }} tot {{ event.eventend | date: "%H:%M" }}</small>
+          {% endif %}
         </td>
       </tr>
       <tr>

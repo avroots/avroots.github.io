@@ -48,7 +48,7 @@ Kom binnenkort terug voor updates!
 ## Word Roots lid
 [Ook lid worden? vul dit formulier in!](https://forms.gle/4yzGaSdxB1vhu1eK9)
 
-Zonder leden geen geen vereniging, en zonder vereniging geen activiteiten! Je kan A.V. Roots steunen door lid te worden en de jaarlijkse contributie van €10,- te betalen.
+Zonder leden geen geen vereniging, en zonder vereniging geen activiteiten! Je kan A.V. Roots steunen door lid te worden en de jaarlijkse contributie van €<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>123</mn></msqrt><annotation encoding="text/plain">the square root of 123 end-root</annotation></semantics></math> (€11,09) te betalen.
 
 - Een geupdate persoonlijke digitale **lidmaatschapskaart**, met lidnummer!
 - Als van te voren aangegeven, een **gratis drankje** bij een activiteit
