@@ -8,6 +8,12 @@ permalink: / # This ensures it remains the site's root page, e.g., https://avroo
 
 Alumnivereniging Roots, de vereniging voor alumni van Studievereniging A–Eskwadraad, van de Universiteit Utrecht. Wil je weer is bijpraten met je oud-studiegenoten? Kom naar een van onze laagdrempelige activiteiten!
 
+<br/>
+
+<div style="text-align:center;">
+  <img src="/assets/2026_jaarplanning.jpeg" alt="Jaarplanning 2026" style="max-width:420px; width:100%; border:1px solid #ccc; border-radius:4px;" />
+</div>
+
 <br/><br/>
 
 ## Volgende Activiteit
