@@ -12,7 +12,7 @@ signup: "https://docs.google.com/forms/d/e/1FAIpQLSe9uJBCTDcPkEPK1h88t2pm230MlqF
 ## A-Eskwadraat reünie
 {% include event-details.html activiteit=page %}
 
-De reünie vindt plaats op 25 april 2026 in het Victor J. Koningsbergergebouw in Utrecht.
+De A-Eskwadraat reünie vindt plaats op 25 april 2026 in het Victor J. Koningsbergergebouw in Utrecht.
 
 ## Voorlopig programma
 
@@ -20,14 +20,8 @@ De reünie vindt plaats op 25 april 2026 in het Victor J. Koningsbergergebouw in
 - 12:00 - 13:00: Leuke praatjes van verschillende (oud-)studenten
 - 13:00 - 14:00: Lunchpauze
 - 14:00 - 15:00: Optionele activiteit
-- 15:00 - 17:00: Borrel, met de mogelijkheid om (jaarlaag)foto's te maken
+- 15:00 - 17:00: BBCie Borrel, met de mogelijkheid om (jaarlaag)foto's te maken
 - 17:45 - laat: Avondeten en doorborrelen met A.V. Roots in Mick O'Connells (optioneel, op eigen kosten)
-
-Let op: er kunnen nog wijzigingen plaatsvinden. Als dat zo is, ontvang je daarover bericht via het opgegeven e-mailadres.
-
-## Vragen
-
-Mochten er urgente vragen zijn, dan kun je terecht bij de LustrumCie via lustrum2526@a-eskwadraat.nl. Je kunt ook altijd het bestuur bereiken via bestuur@a-eskwadraat.nl of via telefoonnummer 030 253 4499 (alleen op doordeweekse dagen tussen 09:00 en 17:00).
 
 ## Na afloop
 
