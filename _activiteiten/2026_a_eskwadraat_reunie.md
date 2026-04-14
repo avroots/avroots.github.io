@@ -16,7 +16,7 @@ De A-Eskwadraat reünie vindt plaats op 25 april 2026 in het Victor J. Koningsbe
 
 ## Voorlopig programma
 
-- 11:00 - 12:00: Inloop
+- 11:30 - 12:00: Inloop
 - 12:00 - 13:00: Leuke praatjes van verschillende (oud-)studenten
 - 13:00 - 14:00: Lunchpauze
 - 14:00 - 15:00: Optionele activiteit
