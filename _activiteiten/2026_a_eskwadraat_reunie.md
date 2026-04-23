@@ -2,7 +2,7 @@
 layout: default
 
 title: "A-Eskwadraat reünie"
-eventdate: 2026-04-25 11:00:00
+eventdate: 2026-04-25 11:30:00
 eventend: 2026-04-25 17:00:00
 location: "KBG (Victor J. Koningsbergergebouw), De Uithof"
 cost: "25 euro"
