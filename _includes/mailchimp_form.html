@@ -26,6 +26,14 @@
             max-width: 300px;
         }
 
+        #mc_embed_signup .mc-hidden-field {
+            position: absolute;
+            left: -5000px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
         /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
@@ -37,15 +45,15 @@
             <div id="mc_embed_signup_scroll">
                 <h2>Op de hoogte blijven?</h2>
                 <div class="mc-field-group"><label for="mce-EMAIL">E-mail</label><input type="email" name="EMAIL"
-                        class="email" id="mce-EMAIL" value=""></div>
+                        class="email" id="mce-EMAIL" autocomplete="email" required value=""></div>
                 <div id="mce-responses" class="clear foot">
                     <div class="response" id="mce-error-response" style="display: none;"></div>
                     <div class="response" id="mce-success-response" style="display: none;"></div>
                 </div>
-                <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    /* real people should not fill this in and expect good things - do not remove this or risk form bot
-                    signups */
-                    <input type="text" name="b_4ce31c149f84c6493fb517a2c_d99fb4a009" tabindex="-1" value="">
+                <div class="mc-hidden-field" aria-hidden="true">
+                    <!-- Bot trap field: should stay empty. -->
+                    <input type="text" name="b_4ce31c149f84c6493fb517a2c_d99fb4a009" tabindex="-1" autocomplete="off"
+                        value="">
                 </div>
                 <div class="optionalParent">
                     <div class="clear foot">
@@ -63,4 +71,38 @@
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
     <script
         type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    <script type="text/javascript">
+        (function () {
+            var form = document.getElementById("mc-embedded-subscribe-form");
+            if (!form) {
+                return;
+            }
+
+            var minSubmitDelayMs = 3000;
+            var formLoadedAt = Date.now();
+            var honeypot = form.querySelector('input[name="b_4ce31c149f84c6493fb517a2c_d99fb4a009"]');
+            var errorResponse = document.getElementById("mce-error-response");
+            var successResponse = document.getElementById("mce-success-response");
+
+            form.addEventListener("submit", function (event) {
+                var submittedTooFast = Date.now() - formLoadedAt < minSubmitDelayMs;
+                var honeypotFilled = honeypot && honeypot.value.trim() !== "";
+
+                if (!submittedTooFast && !honeypotFilled) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                if (successResponse) {
+                    successResponse.style.display = "none";
+                }
+
+                if (errorResponse) {
+                    errorResponse.style.display = "block";
+                    errorResponse.textContent = "Aanmelding mislukt. Probeer het opnieuw.";
+                }
+            });
+        })();
+    </script>
 </div>
