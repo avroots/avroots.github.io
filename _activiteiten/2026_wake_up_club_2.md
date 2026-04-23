@@ -6,7 +6,7 @@ eventdate: 2026-05-27 06:15:00
 eventend: 2026-05-27 09:00:00
 location: "Ping Pong Club Utrecht"
 cost: "Onbeperkt eten, koffie en thee inbegrepen"
-signup: ""
+signup: "https://shop.weeztix.com/37dc63d6-519c-11f0-a9cb-7e126431635e/tickets?event=951a7b62-d8e7-4e5c-9b46-1c78aba6949e"
 ---
 
 ## Wake up club (2e editie)
