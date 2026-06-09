@@ -1,0 +1,17 @@
+---
+---
+
+// This mode defaults to dark when prefers-color-scheme is unsupported.
+@import "colors";
+
+:root {
+  @include colors;
+  @include dark-colors;
+}
+
+@media print, (prefers-color-scheme: light) {
+  // Do not apply dark mode when printing.
+  :root {
+    @include light-colors;
+  }
+}
