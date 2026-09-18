@@ -1,4 +1,4 @@
----
+﻿---
 title: home
 layout: default
 permalink: / # This ensures it remains the site's root page, e.g., https://avroots.nl/
@@ -6,7 +6,7 @@ permalink: / # This ensures it remains the site's root page, e.g., https://avroo
 
 # Alumnivereniging Roots
 
-Alumnivereniging Roots, de vereniging voor alumni van Studievereniging A–Eskwadraad, van de Universiteit Utrecht. Wil je weer is bijpraten met je oud-studiegenoten? Kom naar een van onze laagdrempelige activiteiten!
+Alumnivereniging Roots, de vereniging voor alumni van Studievereniging Aâ€“Eskwadraad, van de Universiteit Utrecht. Wil je weer is bijpraten met je oud-studiegenoten? Kom naar een van onze laagdrempelige activiteiten!
 
 <br/>
 
@@ -47,14 +47,15 @@ Kom binnenkort terug voor updates!
 
 <br/><br/>
 
-{% include mailchimp_form.html %}
+## Op de hoogte blijven?
+Wil je op de hoogte blijven van onze activiteiten? Stuur dan een mailtje naar [bestuur@avroots.nl](mailto:bestuur@avroots.nl).
 
 <br/><br/>
 
 ## Word Roots lid
 [Ook lid worden? vul dit formulier in!](https://forms.gle/4yzGaSdxB1vhu1eK9)
 
-Zonder leden geen vereniging, en zonder vereniging geen activiteiten! Je kan A.V. Roots steunen door lid te worden en de jaarlijkse contributie van €<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>123</mn></msqrt><annotation encoding="text/plain">the square root of 123 end-root</annotation></semantics></math> (€11,09) te betalen.
+Zonder leden geen vereniging, en zonder vereniging geen activiteiten! Je kan A.V. Roots steunen door lid te worden en de jaarlijkse contributie van â‚¬<math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>123</mn></msqrt><annotation encoding="text/plain">the square root of 123 end-root</annotation></semantics></math> (â‚¬11,09) te betalen.
 
 - Een geupdate persoonlijke digitale **lidmaatschapskaart**, met lidnummer!
 - Als van te voren aangegeven, een **gratis drankje** bij een activiteit
