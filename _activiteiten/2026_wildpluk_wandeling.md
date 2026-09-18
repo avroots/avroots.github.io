@@ -1,5 +1,6 @@
 ---
 layout: default
+published: false
 
 title: "Wildpluk wandeling"
 eventdate: 2026-09-01 00:00:00

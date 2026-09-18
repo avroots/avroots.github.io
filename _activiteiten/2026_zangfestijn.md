@@ -1,5 +1,6 @@
 ---
 layout: default
+published: false
 
 title: "Het Zangfestijn met bier 2"
 eventdate: 2026-11-01 00:00:00
