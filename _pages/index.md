@@ -1,4 +1,4 @@
-﻿---
+---
 title: home
 layout: default
 permalink: / # This ensures it remains the site's root page, e.g., https://avroots.nl/
